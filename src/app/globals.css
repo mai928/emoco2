@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,20 +14,112 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+.nav::before {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  content: "";
+  height: 40px;
+  width: 100%;
+  background: url(../../public/assets/1.png);
+  z-index: 3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transform: rotate(-0.3deg);
+}
+
+[dir=ltr] .swiper-button-next {
+  right: 30px !important;
+}
+
+[dir=ltr] .swiper-button-prev {
+  left: 30px !important;
+}
+
+[dir=rtl] .swiper-button-next {
+  left: 40px !important;
+}
+
+[dir=rtl] .swiper-button-prev {
+  right: 40px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 23px !important;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 14px 20px;
+  border-radius: 50%;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+  transform: translateX(300px);
+  z-index: 9999;
+}
+
+.svg-right {
+  fill: black;
+}
+
+.svg-right:hover {
+  fill: white;
+}
+
+
+.custom-overlay__caption {
+  background-color: rgba(0, 0, 0, 0.2);
+  max-height: 240px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  font-size: 55px;
+}
+
+figcaption {
+  font-size: 20px !important;
+}
+
+.background-img {
+  background-image: url('../../public/assets/footer1.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 15%;
+}
+
+
+input {
+  outline: none;
+
 }
