@@ -25,7 +25,7 @@ const Product = () => {
 
             <ImageGallery imagesInfoArray={images} columnWidth={240} gapSize={10} />
             <div className='m-auto text-center my-10 '>
-                <Link href={'/'} className=' bg-primary_color hover:bg-secondary_color hover:text-white  text-xl  px-14 py-4 rounded-full font-Outfit font-semibold '>Show More</Link>
+                <Link href={'/'} className=' bg-primary_color hover:bg-secondary_color text-white  text-xl  px-14 py-4 rounded-full font-Outfit font-semibold '>Show More</Link>
 
             </div>
         </section>

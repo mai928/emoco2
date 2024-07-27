@@ -8,20 +8,22 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import  slide2 from '../../../public/assets/images/slider2.jpg'
-import  slide1 from '../../../public/assets/images/slider1.jpg'
+// import  slide2 from '../../../public/assets/images/slider2.jpg'
+// import  slide1 from '../../../public/assets/images/slider1.jpg'
+import wave from '../../../public/assets/wave.svg'
+import Image from 'next/image';
 
 const sliderData = [
-	{
-		slider:'/assets/images/slider2.jpg' ,
-		heading: "Agriculture Farming Product1",
-		desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
-	},
-	{
-		slider:'/assets/images/slider1.jpg',
-		heading: "Agriculture Organic Product2",
-		desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
-	},
+    {
+        slider: '/assets/banner3.jpg',
+        heading: "Agriculture Farming Product1",
+        desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
+    },
+    {
+        slider: '/assets/banner2.jpg',
+        heading: "Agriculture Organic Product2",
+        desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
+    },
 ];
 
 const Slider = () => {
@@ -62,8 +64,8 @@ const Slider = () => {
                     sliderData.map((slide, index) => (
                         <SwiperSlide key={index} className="swiper-slide relative">
                             <div className='relative'>
-                                <img className='w-full h-[70vb] lg:h-[130vb]'  alt='img' src={slide.slider} />
-                     
+                                <img className='w-full h-[70vb] lg:h-[130vb]' alt='img' src={slide.slider} />
+
 
                                 <div className='absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-40'></div>
 
@@ -71,17 +73,17 @@ const Slider = () => {
                             <div className='absolute top-7 lg:top-44 start-10 lg:start-64  lg:w-[55%]'>
                                 <h2 className='font-IntoLightTw0 text-lg lg:text-8xl text-white'>{slide.heading}</h2>
                                 <p className=' lg:mt-16 mb-10 text-white  font-Outfit text-[12px] lg:text-[17px]  font-semibold lg:font-bold w-[80%]'>{slide.desc}</p>
-                                <Link href={'/'} className='bg-primary_color font-Outfit text-base lg:text-xl  text-color_heading  lg:font-[600] py-2 lg:py-5 px-4 lg:px-10 rounded-md hover:bg-secondary_color'>Discover More</Link>
+                                <Link href={'/'} className='bg-primary_color font-Outfit text-base lg:text-xl  text-white  lg:font-[600] py-2 lg:py-5 px-4 lg:px-10 rounded-md hover:bg-secondary_color'>Discover More</Link>
                             </div>
                         </SwiperSlide>
-                    ))
+                ))
                 }
 
 
 
             </Swiper>
             <div className='absolute bottom-0 left-0 z-10'>
-                            <img src='../assets/wave.svg' />
+                <Image width={'100%'} src={wave} alt='wave' />
 
             </div>
         </section>

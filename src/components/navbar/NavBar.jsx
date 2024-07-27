@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { navlinks } from '@/data'
-import logo from '../../../public/assets/logo2.png'
+import logo from '../../../public/assets/emoco.png'
 // import LanguageSwitcher from '../../languages/LanguageSwitcher'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NavBar = () => {
 
@@ -36,7 +37,7 @@ const NavBar = () => {
         <header className='relative z-50 '>
             <nav className='nav  bg-white pt-6 pb-8'>
                 <div className='flex flex-1 justify-between items-center mx-5 lg:mx-32'>
-                    <img src={logo} width={196} />
+                    <Image src={logo} alt='emoco' width={120} />
 
 
                     {
@@ -86,7 +87,7 @@ const NavBar = () => {
                 <div className={`sidebar ${toggle ? "open" : ""}`}>
                     <div className="p-10">
                         <div className="flex justify-between items-end mb-10">
-                            <Link href={'/'}><img alt="logo" width={110} height={'auto'} src={logo} /></Link>
+                            <Link href={'/'}><image alt="logo" width={110} height={'auto'} src={logo} /></Link>
                             <h1
                                 className="cursor-pointer p-1 px-3 rounded-full bg-primary_color font-semibold text-white-300"
                                 onClick={() => setToggle(false)}

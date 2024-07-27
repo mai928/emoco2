@@ -30,38 +30,33 @@ export const navlinks = [
 	},
 ];
 
-// export const sliderData = [
-// 	{
-// 		img: slider2,
-// 		heading: "Agriculture Farming Product1",
-// 		desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
-// 	},
-// 	{
-// 		img: slider1,
-// 		heading: "Agriculture Organic Product2",
-// 		desc: "Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable",
-// 	},
-// ];
+
 
 export const services = [
 	{
 		id: 1,
-		src: '/assets/images/service1.png',
+		src: '/assets/feature1.jpg',
 		title: "Test-Bottle",
 		desc: "Medical is the knowledge or master event. Identify the error of the we coding page speed.",
 	},
 	{
 		id: 2,
-		src: '/assets/images/service1.png',
+		src: '/assets/feature2.jpg',
 		title: "Test-Bottle",
 		desc: "Medical is the knowledge or master event. Identify the error of the we coding page speed.",
 	},
 	{
 		id: 3,
-		src: '/assets/images/service1.png',
+		src: '/assets/feature3.jpg',
 		title: "Test-Bottle",
 		desc: "Medical is the knowledge or master event. Identify the error of the we coding page speed.",
 	},
+	// {
+	// 	id: 4,
+	// 	src: '/assets/feature4.jpg',
+	// 	title: "Test-Bottle",
+	// 	desc: "Medical is the knowledge or master event. Identify the error of the we coding page speed.",
+	// },
 	
 ];
 

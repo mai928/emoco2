@@ -36,7 +36,7 @@ box-sizing: border-box;
   content: "";
   height: 40px;
   width: 100%;
-  background: url(../../public/assets/1.png);
+  /* background: url(../../public/assets/1.png); */
   z-index: 3;
   background-size: contain;
   background-repeat: no-repeat;
@@ -85,13 +85,13 @@ box-sizing: border-box;
   z-index: 9999;
 }
 
-.svg-right {
+/* .svg-right {
   fill: black;
 }
 
 .svg-right:hover {
   fill: white;
-}
+} */
 
 
 .custom-overlay__caption {
@@ -111,7 +111,7 @@ figcaption {
 }
 
 .background-img {
-  background-image: url('../../public/assets/footer1.png');
+  /* background-image: url('../../public/assets/footer1.png'); */
   background-position: left bottom;
   background-repeat: no-repeat;
   position: relative;

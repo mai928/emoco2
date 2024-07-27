@@ -9,7 +9,7 @@ const Contact = () => {
 
             <div className="gap-10  block lg:flex lg:flex-row ">
                 <div className="lg:w-1/2">
-                    <div className='border-[1px] border-gray-200 rounded-md py-10  ps-5 lg:ps-20 bg-dark_Green'>
+                    <div className='border-[1px] border-gray-200 rounded-md py-10  ps-5 lg:ps-20 bg-[#154c79]'>
                         <h3 className=' text-center lg:text-start text-lg lg:text-5xl font-semibold font-Outfit leading-relaxed text-white'>Contact Information</h3>
 
 

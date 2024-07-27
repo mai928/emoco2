@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { services } from '@/data';
-// import DOMPurify from 'dompurify';
+import DOMPurify from 'dompurify';
 import Link from 'next/link';
 
 
@@ -28,7 +28,7 @@ const Services = () => {
 
     const breakpoints = {
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 20,
 
         },
@@ -89,12 +89,12 @@ const Services = () => {
                                     <div className="p-6">
                                         <img className='w-56 rounded-md' alt={'img'} src={item.src} />
                                         <h2 className="text-xl font-bold font-Outfit  mb-2 mt-4">{item.title}</h2>
-                                        {/* <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} /> */}
+                                        <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} />
 
                                         {/* ${encodeURIComponent(item.slug) */}
-                                        {/* <Link href={`/services`} className={''} >
-                                            <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} className='svg-right bg-primary_color p-5 rounded-full hover:bg-secondary_color' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg>
-                                        </Link> */}
+                                        <Link href={`/services`} className={''} >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} className='  p-5 rounded-full bg-secondary_color fill-white' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg>
+                                        </Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -103,7 +103,7 @@ const Services = () => {
 
                 </Swiper>
                 <div className="flex justify-center mt-10">
-                    <Link href={'/services'} className={'w-36  md:w-48 lg:w-56 py-3 font-Outfit font-bold text-xl bg-primary_color hover:bg-secondary_color hover:text-white rounded-full text-center'} >{"Show More"}</Link>
+                    <Link href={'/services'} className={'w-36  md:w-48 lg:w-56 py-3 font-Outfit font-bold text-xl bg-primary_color hover:bg-secondary_color text-white rounded-full text-center'} >{"Show More"}</Link>
                 </div>
             </div>
         </section>

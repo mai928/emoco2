@@ -1,24 +1,25 @@
 import React from 'react'
-import logo from '../../../public/assets/logo22.png'
+import logo from '../../../public/assets/emoco.png'
 import { navlinks } from '@/data'
-import footer2 from '../../../public/assets/footer2.png'
+// import footer2 from '../../../public/assets/footer2.png'
 import { useTranslation } from 'react-i18next'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 const Footer = () => {
     const {t}=useTranslation()
     return (
-        <section className='bg-dark_Green z-50   background-img pt-10 lg:pt-20 pb-40 px-10  lg:px-24'>
+        <section className='bg-footer_color z-50   background-img pt-10 lg:pt-20 pb-40 px-10  lg:px-24'>
             <div className='block text-center lg:text-start lg:flex lg:mt-20'>
 
 
                 <div className='lg:w-1/3 '>
-                    <img className=' w-52  m-auto lg:m-0 filter brightness-0 invert-[1]' src={logo} />
+                    <Image className=' w-40  m-auto lg:m-0 ' src={logo} />
                     <p className='text-white font-Outfit my-4 l:my-10'>Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.</p>
                     <form className='relative flex items-center'>
                         <input className='py-5 px-10 w-full rounded-full  block' placeholder='Your Email' />
-                        <button className='bg-primary_color  rounded-full px-4 py-3 font-bold font-Outfit absolute end-2  hover:bg-secondary_color hover:text-white'>Go</button>
+                        <button className='bg-primary_color  rounded-full px-4 py-3 font-bold font-Outfit absolute end-2  hover:bg-secondary_color text-white'>Go</button>
 
                     </form>
                     {/* social media */}
@@ -110,7 +111,7 @@ const Footer = () => {
             </div>
 
             <div className=' absolute bottom-0 end-0 z-0'>
-                <img className='w-[600px] opacity-50 ' alt='img' src={footer2} />
+                {/* <img className='w-[600px] opacity-50 ' alt='img' src={footer2} /> */}
             </div>
         </section>
     )
