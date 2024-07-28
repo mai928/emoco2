@@ -26,23 +26,29 @@ const sliderData = [
 
 const Slider = () => {
     const { i18n } = useTranslation();
-    const [showNavigation, setShowNavigation] = useState(false);
+    // const [showNavigation, setShowNavigation] = useState(false);
 
-    useEffect(() => {
-        const handleMouseOver = () => setShowNavigation(true);
-        const handleMouseOut = () => setShowNavigation(false);
+    // useEffect(() => {
+    //     const handleMouseOver = () => setShowNavigation(true);
+    //     const handleMouseOut = () => setShowNavigation(false);
 
-        window.addEventListener('mouseover', handleMouseOver);
-        window.addEventListener('mouseout', handleMouseOut);
+    //     window.addEventListener('mouseover', handleMouseOver);
+    //     window.addEventListener('mouseout', handleMouseOut);
 
-        return () => {
-            window.removeEventListener('mouseover', handleMouseOver);
-            window.removeEventListener('mouseout', handleMouseOut);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('mouseover', handleMouseOver);
+    //         window.removeEventListener('mouseout', handleMouseOut);
+    //     };
+    // }, []);
+
+    const [show, setShow] = useState(false)
+
 
     return (
-        <section className='relative z-0'>
+        <section
+        onMouseOver={() => setShow(true)}
+        onMouseOut={() => setShow(false)}
+        className='relative z-0'>
             <Swiper
                 className="static"
                 loop={true}
@@ -55,6 +61,13 @@ const Slider = () => {
                     prevEl: ".swiper-button-prev",
                 }}
             >
+
+<>
+
+<div className={`swiper-button-next  text-white  ${show ? 'opacity-100' : 'opacity-0'}`}></div>
+<div className={`swiper-button-prev text-white ${show ? 'opacity-100' : 'opacity-0'} `}></div>
+
+</>
                 {sliderData.map((slide, index) => (
                     <SwiperSlide key={index} className="swiper-slide relative">
                         <div className='relative'>
@@ -69,12 +82,7 @@ const Slider = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {showNavigation && (
-                <>
-                    <div className={`swiper-button-next text-white`}></div>
-                    <div className={`swiper-button-prev text-white`}></div>
-                </>
-            )}
+           
             <div className='absolute bottom-0 left-0 z-10'>
                 <Image width={1000}  className='responsive-image' src={wave} alt='wave' />
             </div>

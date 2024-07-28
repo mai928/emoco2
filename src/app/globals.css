@@ -45,7 +45,7 @@ overflow-x: hidden;
   transform: rotate(-0.3deg); */
 }
 
-[dir=ltr] .swiper-button-next {
+/* [dir=ltr] .swiper-button-next {
   right: 30px !important;
 }
 
@@ -59,7 +59,7 @@ overflow-x: hidden;
 
 [dir=rtl] .swiper-button-prev {
   right: 40px !important;
-}
+} */
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
