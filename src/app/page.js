@@ -11,14 +11,14 @@ import Videos from "@/components/video/Videos";
 export default function Home() {
   return (
     <section>
-      <NavBar/>
-    <Slider/>
-    <About/>
-    <Services/>
-    <Contact/>
-    <Product/>
-    <Footer/>
-    {/* <Videos/> */}
-</section>
+      <NavBar />
+      <Slider />
+      <About />
+      <Services />
+      <Contact />
+      <Product />
+      <Footer />
+      {/* <Videos/> */}
+    </section>
   );
 }

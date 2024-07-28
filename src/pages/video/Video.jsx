@@ -1,4 +1,4 @@
-import { videoSources } from '@/data';
+// import { videoSources } from '@/data';
 import React from 'react'
 
 const VideoPlayer = ({ src, type, controls = true, autoplay = false, loop = false, muted = false, width = '100%', height = 'auto' }) => {

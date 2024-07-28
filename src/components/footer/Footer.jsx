@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../public/assets/emoco.png'
+import logo from '../../../public/assets/emoco-remove.png'
 import { navlinks } from '@/data'
 // import footer2 from '../../../public/assets/footer2.png'
 import { useTranslation } from 'react-i18next'
@@ -15,7 +15,7 @@ const Footer = () => {
 
 
                 <div className='lg:w-1/3 '>
-                    <Image className=' w-40  m-auto lg:m-0 ' src={logo} />
+                    <Image alt='logo' className=' w-40  m-auto lg:m-0 ' src={logo} />
                     <p className='text-white font-Outfit my-4 l:my-10'>Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.</p>
                     <form className='relative flex items-center'>
                         <input className='py-5 px-10 w-full rounded-full  block' placeholder='Your Email' />
@@ -64,8 +64,8 @@ const Footer = () => {
                     <h3 className='font-Outfit text-3xl text-white mb-6'>Explore</h3>
                     <ul>
                         {
-                            navlinks.map((link) => (
-                                <li className='text-slate-200 font-Outfit my-4 text-[17px] font-semibold'>
+                            navlinks.map((link ,index) => (
+                                <li key={index} className='text-slate-200 font-Outfit my-4 text-[17px] font-semibold'>
                                     <Link href={link.path}>{t(link.name)}</Link>
                                 </li>
                             ))

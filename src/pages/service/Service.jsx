@@ -2,6 +2,7 @@ import React from 'react'
 import DOMPurify from 'dompurify';
 import Link from 'next/link';
 import { services } from '@/data';
+import Image from 'next/image';
 
 
 const Service = () => {
@@ -34,7 +35,7 @@ const Service = () => {
                     <div key={index} className=" mt-5">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden">
                             <div className="p-6">
-                                <img className='w-56 rounded-md' alt={'img'} src={item.src} />
+                                <Image className='w-56 rounded-md' alt={'img'} src={item.src} />
                                 <h2 className="text-xl font-bold font-Outfit  mb-2 mt-4">{item.title}</h2>
                                 <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} />
 
