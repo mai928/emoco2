@@ -6,7 +6,7 @@ import NavBar from "@/components/navbar/NavBar";
 import Product from "@/components/product/Product";
 import Services from "@/components/services/Services";
 import Slider from "@/components/slider/Slider";
-import Videos from "@/components/video/Videos";
+// import Videos from "@/components/video/Videos";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <NavBar />
       <Slider />
       <About />
-      <Services />
+      <Services/>
       <Contact />
       <Product />
       <Footer />

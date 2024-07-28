@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { services } from '@/data';
-import DOMPurify from 'dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 import Link from 'next/link';
 import Image from 'next/image';
 
