@@ -1,5 +1,5 @@
 import React from 'react'
-import DOMPurify from 'dompurify';
+// import DOMPurify from 'dompurify';
 import Link from 'next/link';
 import { services } from '@/data';
 import Image from 'next/image';
@@ -37,7 +37,7 @@ const Service = () => {
                             <div className="p-6">
                                 <Image className='w-56 rounded-md' alt={'img'} src={item.src} />
                                 <h2 className="text-xl font-bold font-Outfit  mb-2 mt-4">{item.title}</h2>
-                                <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} />
+                                {/* <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} /> */}
 
                                 {/* ${encodeURIComponent(item.slug) */}
                                 <Link href={`/services/}`} className={''} >

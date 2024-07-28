@@ -31,18 +31,18 @@ overflow-x: hidden;
 
 
 .nav::before {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  bottom: -10px;
-  content: "";
+  bottom: -10px; */
+  /* content: "";
   height: 40px;
-  width: 100%;
+  width: 100%; */
   /* background: url(../../public/assets/1.png); */
-  z-index: 3;
+  /* z-index: 3;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  transform: rotate(-0.3deg);
+  transform: rotate(-0.3deg); */
 }
 
 [dir=ltr] .swiper-button-next {

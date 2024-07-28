@@ -1,23 +1,23 @@
 import React from 'react'
-import { videoSources } from '@/data'
+// import { videoSources } from '@/data'
 
 
-const VideoPlayer = ({ src, type, controls = true, autoplay = false, loop = false, muted = false, width = '100%', height = 'auto' }) => {
-    return (
-        <video
-            controls={controls}
-            autoPlay={autoplay}
-            loop={loop}
-            muted={muted}
-            width={width}
-            height={height}
-        className='mt-5'
-        >
-            <source src={src} type={type} />
-            Your browser does not support the video tag.
-        </video>
-    );
-};
+// const VideoPlayer = ({ src, type, controls = true, autoplay = false, loop = false, muted = false, width = '100%', height = 'auto' }) => {
+//     return (
+//         <video
+//             controls={controls}
+//             autoPlay={autoplay}
+//             loop={loop}
+//             muted={muted}
+//             width={width}
+//             height={height}
+//         className='mt-5'
+//         >
+//             <source src={src} type={type} />
+//             Your browser does not support the video tag.
+//         </video>
+//     );
+// };
 
 
 const Videos = () => {
@@ -28,7 +28,7 @@ const Videos = () => {
                     Explore Awesome Videos</h3>
 
             </div> 
-                       <div className='block lg:flex flex-wrap justify-center gap-6' >
+                       {/* <div className='block lg:flex flex-wrap justify-center gap-6' >
                 {
                     videoSources.map((vid, index) => (
                         <VideoPlayer
@@ -44,7 +44,7 @@ const Videos = () => {
                         />
                     ))
                 }
-            </div>
+            </div> */}
         </section>
 
     )

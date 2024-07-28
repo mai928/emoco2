@@ -90,7 +90,7 @@ const Services = () => {
                                     <div className="p-6">
                                         <Image width={224} height={500} className='w-56 rounded-md' alt={'img'} src={item.src} />
                                         <h2 className="text-xl font-bold font-Outfit  mb-2 mt-4">{item.title}</h2>
-                                        <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize((truncateText(item.desc, 20))) }} />
+                                        <div className="text-paragraph_color text-base font-Outfit font-[500] mb-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateText(item.desc, 20)) }} />
 
                                         {/* ${encodeURIComponent(item.slug) */}
                                         <Link href={`/services`} className={''} >
