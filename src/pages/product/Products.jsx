@@ -1,7 +1,6 @@
 import React from 'react'
 import { ImageGallery } from "react-image-grid-gallery";
-import { Productgallery } from '../../../data';
-import { Link } from 'react-router-dom';
+import { Productgallery } from '@/data';
 
 const images = Productgallery.map((image) => ({
     ...image,
