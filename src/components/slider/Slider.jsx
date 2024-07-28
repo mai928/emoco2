@@ -58,7 +58,7 @@ const Slider = () => {
                 {sliderData.map((slide, index) => (
                     <SwiperSlide key={index} className="swiper-slide relative">
                         <div className='relative'>
-                            <Image width={1920} height={1080} className='w-full h-auto' alt='img' src={slide.slider} />
+                            <Image width={1920} height={1080} className='w-full h-[70vb] lg:h-auto' alt='img' src={slide.slider} />
                             <div className='absolute top-0 bottom-0 right-0 left-0 bg-black bg-opacity-40'></div>
                         </div>
                         <div className='absolute top-7 lg:top-36 start-10 lg:start-64 lg:w-[55%]'>
